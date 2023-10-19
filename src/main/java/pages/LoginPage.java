@@ -14,7 +14,8 @@ public class LoginPage {
     private By usernameInputElement = By.xpath("//input[contains(@class, 'input-username-email')]");
     private By passwordInputElement = By.xpath("//input[contains(@class, 'input-password')]");
     private By submitLoginBTNElement = By.xpath("//button[contains(@id, 'btn-login-submit')]");
-    private By logoutLinkElement = By.linkText("Logout");
+    private By logoutTextElement = By.linkText("Logout");
+    private By checkBoxSecElement = By.xpath("//input[contains(@type, 'checkbox')]");
 
     // Constructor
     public LoginPage(WebDriver wDriver){
@@ -29,6 +30,11 @@ public class LoginPage {
     public WebElement bsLoginBTNElem(){
         WebElement bsLoginBTN = wDriver.findElement(loginBTNElement);
         return bsLoginBTN;
+    }
+    public void clickLoginBTN()
+    {
+        WebElement bsLoginBTN = wDriver.findElement(loginBTNElement);
+        bsLoginBTN.click();
     }
     public String getLoginPageURL(){
         String loginPageURL = wDriver.getCurrentUrl();
@@ -46,8 +52,13 @@ public class LoginPage {
         WebElement clickLoginBTN = wDriver.findElement(submitLoginBTNElement);
         clickLoginBTN.click();
     }
-    public WebElement checkLogoutLink() {
-        WebElement logoutLink = wDriver.findElement(logoutLinkElement);
-        return logoutLink;
+    public WebElement checkLogoutText() {
+        WebElement logoutText = wDriver.findElement(logoutTextElement);
+        return logoutText;
+    }
+
+    public void checkPageSecurity(){
+        WebElement checkBoxSec = wDriver.findElement(checkBoxSecElement);
+        checkBoxSec.click();
     }
 }

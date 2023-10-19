@@ -10,7 +10,7 @@ import org.testng.annotations.DataProvider;
         monochrome = true,
         publish = true)
 
-public class HomePageRunner extends AbstractTestNGCucumberTests {
+public class TestRunner extends AbstractTestNGCucumberTests {
     @DataProvider(parallel = true)
     public Object[][] scenario(){
         return super.scenarios();

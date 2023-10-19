@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Home Page Parallel Suite" verbose="1" parallel="classes" thread-count="2">
-    <test name="Home Page Tests">
+<suite name="Boylesports Website Parallel Suite" verbose="1" parallel="classes" thread-count="1">
+    <test name="Boylesports Website Tests">
         <classes>
-            <class name="runners.HomePageRunner" />
+            <class name="runners.TestRunner" />
         </classes>
     </test>
 </suite>
