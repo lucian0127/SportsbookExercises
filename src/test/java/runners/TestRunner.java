@@ -5,10 +5,8 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(features = "src/test/resources/features.home",
-        glue = {"stepdefs"},
-        plugin = {"pretty", "html:target/cucumber-reports", "json:target/cucumber.json"},
-        monochrome = true,
-        publish = true)
+        glue = {"stepdefs", "hooks"},
+        plugin = {"pretty", "html:target/cucumber-reports", "json:target/cucumber.json"})
 
 public class TestRunner extends AbstractTestNGCucumberTests {
     @DataProvider(parallel = true)

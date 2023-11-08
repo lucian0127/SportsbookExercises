@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import pages.SocialMediaPage;
-
+import java.util.ArrayList;
 public class SocialMediaStepDef {
 
     private WebDriver wDriver;
@@ -116,6 +116,6 @@ public class SocialMediaStepDef {
     }
     @Then("I redirected to Boylesports Youtube channel")
     public void i_redirected_to_boylesports_youtube_channel() {
-        Assert.assertTrue(socialMediaPage.getYoutubePageURL().contains("youtube.com/boylesports"));
+        Assert.assertTrue(socialMediaPage.getYoutubePageURL().contains("youtube.com/user/betBoylesports"));
     }
 }

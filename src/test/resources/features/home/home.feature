@@ -16,8 +16,8 @@ Feature: Validates the Logo for Boylesports Website
     Given I want to validate if i am not logged in to Boylesports website
     When I click on the login button from the header
     Then I am successfully redirected to login page
-#    When I have entered a valid "<tttttddomingo>" and "<Password1!>"
-#    Then I click on the login button
-#    Then I should be logged in successfully
+    When I have entered a valid "<tttttddomingo>" and "<Password1!>"
+    Then I click on the login button
+    Then I should be logged in successfully
 
 

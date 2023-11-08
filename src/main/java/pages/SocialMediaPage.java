@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
+
 public class SocialMediaPage {
 
     private WebDriver wDriver;
@@ -27,6 +29,10 @@ public class SocialMediaPage {
         facebooklogo.click();
     }
     public String getFacebookPageURL(){
+        // Switch to second tab
+        ArrayList<String> tabs = new ArrayList<String> (wDriver.getWindowHandles());
+        wDriver.switchTo().window(tabs.get(1));
+
         String facebookPageUrl = wDriver.getCurrentUrl();
         return facebookPageUrl;
     }
@@ -39,6 +45,10 @@ public class SocialMediaPage {
         twitterLogo.click();
     }
     public String getTwitterPageURL(){
+        // Switch to second tab
+        ArrayList<String> tabs = new ArrayList<String> (wDriver.getWindowHandles());
+        wDriver.switchTo().window(tabs.get(1));
+
         String twitterPageUrl = wDriver.getCurrentUrl();
         return twitterPageUrl;
     }
@@ -51,6 +61,10 @@ public class SocialMediaPage {
         youtubeLogo.click();
     }
     public String getYoutubePageURL(){
+        // Switch to second tab
+        ArrayList<String> tabs = new ArrayList<String> (wDriver.getWindowHandles());
+        wDriver.switchTo().window(tabs.get(1));
+
         String youtubePageUrl = wDriver.getCurrentUrl();
         return youtubePageUrl;
     }
