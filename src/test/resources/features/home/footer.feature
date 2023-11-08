@@ -6,11 +6,13 @@ Feature: Validate Footer Sections
   Background:
     Given I am on the Boylesports website home page
 
+#  Promotion validation
   Scenario: Successfully validated the Promotion Links in Helpful links
     When I check Promotion Links if exists
     Then I click Promotion Links from Helpful Links section
     And I redirected to Promotion page
 
+#  Fast Racing Result validation
   Scenario: Successfully validated the Fast Racing Result Links in Helpful links
     When I check Fast Racing Result Links if exists
     Then I click Fast Racing Result Links from Helpful Links section

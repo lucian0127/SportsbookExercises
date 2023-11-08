@@ -9,7 +9,6 @@ public class Footer {
     public Footer(WebDriver wDriver){
         this.wDriver = wDriver;
     }
-
     private By promotionLinkElement = By.xpath("//div[contains(@class, 'footer-content')]//a[contains(@href, '/promotions')]");
     private By fastresLinkElement = By.xpath("//div[contains(@class, 'footer-content')]//a[contains(@href, '/fast-result')]");
     private By resultLinkElement = By.xpath("//div[contains(@class, 'footer-content')]//a[contains(@href, '/result')]");

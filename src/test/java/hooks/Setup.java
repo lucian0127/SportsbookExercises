@@ -1,11 +1,9 @@
 package hooks;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Properties;
-
 public class Setup {
     public static WebDriver wDriver = new ChromeDriver();
     Properties prop = new Properties();

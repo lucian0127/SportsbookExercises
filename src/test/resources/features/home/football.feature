@@ -8,6 +8,7 @@ Feature: Validates the Football page
   Background:
     Given I am on the Boylesports website home page
 
+#  Football page validation
   Scenario: Successfully validated the Football title in Football page
     Given I have validated the Football link in Left Navigation bar in home page.
     When I click on the Football link from Left Navigation bar
